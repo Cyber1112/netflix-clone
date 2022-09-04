@@ -9,23 +9,74 @@
 /* Begin PBXBuildFile section */
 		1643621028C4BD8E009792DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643620F28C4BD8E009792DC /* AppDelegate.swift */; };
 		1643621228C4BD8E009792DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643621128C4BD8E009792DC /* SceneDelegate.swift */; };
-		1643621428C4BD8E009792DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643621328C4BD8E009792DC /* ViewController.swift */; };
+		1643621428C4BD8E009792DC /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643621328C4BD8E009792DC /* MainTabBarViewController.swift */; };
 		1643621728C4BD8E009792DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1643621528C4BD8E009792DC /* Main.storyboard */; };
-		1643621A28C4BD8E009792DC /* Netflix_Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1643621828C4BD8E009792DC /* Netflix_Clone.xcdatamodeld */; };
+		1643621A28C4BD8E009792DC /* NetflixCloneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1643621828C4BD8E009792DC /* NetflixCloneModel.xcdatamodeld */; };
 		1643621C28C4BD8F009792DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1643621B28C4BD8F009792DC /* Assets.xcassets */; };
 		1643621F28C4BD8F009792DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1643621D28C4BD8F009792DC /* LaunchScreen.storyboard */; };
+		1643622828C4BDD0009792DC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1643622728C4BDD0009792DC /* FirebaseAnalytics */; };
+		1643622A28C4BDD0009792DC /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1643622928C4BDD0009792DC /* FirebaseAnalyticsSwift */; };
+		1643622C28C4BDD0009792DC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1643622B28C4BDD0009792DC /* FirebaseAuth */; };
+		1643622E28C4BDD0009792DC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1643622D28C4BDD0009792DC /* FirebaseFirestore */; };
+		1643623028C4BEB0009792DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1643622F28C4BEB0009792DC /* GoogleService-Info.plist */; };
+		1643623828C4C65B009792DC /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643623428C4C65B009792DC /* UpcomingViewController.swift */; };
+		1643623928C4C65B009792DC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643623528C4C65B009792DC /* HomeViewController.swift */; };
+		1643623A28C4C65B009792DC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643623628C4C65B009792DC /* SearchViewController.swift */; };
+		1643623B28C4C65B009792DC /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643623728C4C65B009792DC /* DownloadsViewController.swift */; };
+		1643624128C4C665009792DC /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643623C28C4C665009792DC /* AuthViewController.swift */; };
+		1643624328C4C665009792DC /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643623E28C4C665009792DC /* SearchResultsViewController.swift */; };
+		1643624428C4C665009792DC /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643623F28C4C665009792DC /* TitlePreviewViewController.swift */; };
+		1643624528C4C665009792DC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643624028C4C665009792DC /* ProfileViewController.swift */; };
+		1643629E28C4C6D9009792DC /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643629528C4C6D9009792DC /* ApiCaller.swift */; };
+		1643629F28C4C6D9009792DC /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643629628C4C6D9009792DC /* DataPersistenceManager.swift */; };
+		164362A028C4C6D9009792DC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643629728C4C6D9009792DC /* AuthManager.swift */; };
+		164362A228C4C6D9009792DC /* Tv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643629A28C4C6D9009792DC /* Tv.swift */; };
+		164362A328C4C6D9009792DC /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643629B28C4C6D9009792DC /* Title.swift */; };
+		164362A428C4C6D9009792DC /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643629C28C4C6D9009792DC /* YoutubeSearchResponse.swift */; };
+		164362A528C4C6D9009792DC /* Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643629D28C4C6D9009792DC /* Upcoming.swift */; };
+		164362A828C4C6EE009792DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164362A728C4C6EE009792DC /* Extensions.swift */; };
+		164362B128C4C707009792DC /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164362AA28C4C707009792DC /* TitleCollectionViewCell.swift */; };
+		164362B228C4C707009792DC /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164362AB28C4C707009792DC /* CollectionViewTableViewCell.swift */; };
+		164362B328C4C707009792DC /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164362AC28C4C707009792DC /* HeroHeaderUIView.swift */; };
+		164362B428C4C707009792DC /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164362AD28C4C707009792DC /* TitleTableViewCell.swift */; };
+		164362B528C4C707009792DC /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164362AF28C4C707009792DC /* TitlePreviewViewModel.swift */; };
+		164362B628C4C707009792DC /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164362B028C4C707009792DC /* TitleViewModel.swift */; };
+		164362B928C4C8A4009792DC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 164362B828C4C8A4009792DC /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1643620C28C4BD8E009792DC /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1643620F28C4BD8E009792DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1643621128C4BD8E009792DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1643621328C4BD8E009792DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1643621328C4BD8E009792DC /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		1643621628C4BD8E009792DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1643621928C4BD8E009792DC /* Netflix_Clone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Netflix_Clone.xcdatamodel; sourceTree = "<group>"; };
 		1643621B28C4BD8F009792DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1643621E28C4BD8F009792DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1643622028C4BD8F009792DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1643622F28C4BEB0009792DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1643623428C4C65B009792DC /* UpcomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		1643623528C4C65B009792DC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1643623628C4C65B009792DC /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1643623728C4C65B009792DC /* DownloadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		1643623C28C4C665009792DC /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		1643623E28C4C665009792DC /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		1643623F28C4C665009792DC /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		1643624028C4C665009792DC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1643629528C4C6D9009792DC /* ApiCaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		1643629628C4C6D9009792DC /* DataPersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
+		1643629728C4C6D9009792DC /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		1643629A28C4C6D9009792DC /* Tv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
+		1643629B28C4C6D9009792DC /* Title.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		1643629C28C4C6D9009792DC /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		1643629D28C4C6D9009792DC /* Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upcoming.swift; sourceTree = "<group>"; };
+		164362A728C4C6EE009792DC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		164362AA28C4C707009792DC /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		164362AB28C4C707009792DC /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		164362AC28C4C707009792DC /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		164362AD28C4C707009792DC /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		164362AF28C4C707009792DC /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
+		164362B028C4C707009792DC /* TitleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +84,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1643622A28C4BDD0009792DC /* FirebaseAnalyticsSwift in Frameworks */,
+				1643622E28C4BDD0009792DC /* FirebaseFirestore in Frameworks */,
+				1643622C28C4BDD0009792DC /* FirebaseAuth in Frameworks */,
+				1643622828C4BDD0009792DC /* FirebaseAnalytics in Frameworks */,
+				164362B928C4C8A4009792DC /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +114,103 @@
 		1643620E28C4BD8E009792DC /* Netflix Clone */ = {
 			isa = PBXGroup;
 			children = (
+				164362AE28C4C707009792DC /* ViewModels */,
+				164362A928C4C707009792DC /* Views */,
+				164362A628C4C6EE009792DC /* Resources */,
+				1643629428C4C6D9009792DC /* Managers */,
+				1643629828C4C6D9009792DC /* Models */,
+				1643623128C4C53E009792DC /* Controllers */,
+				1643622F28C4BEB0009792DC /* GoogleService-Info.plist */,
 				1643620F28C4BD8E009792DC /* AppDelegate.swift */,
 				1643621128C4BD8E009792DC /* SceneDelegate.swift */,
-				1643621328C4BD8E009792DC /* ViewController.swift */,
+				1643621328C4BD8E009792DC /* MainTabBarViewController.swift */,
 				1643621528C4BD8E009792DC /* Main.storyboard */,
 				1643621B28C4BD8F009792DC /* Assets.xcassets */,
 				1643621D28C4BD8F009792DC /* LaunchScreen.storyboard */,
 				1643622028C4BD8F009792DC /* Info.plist */,
-				1643621828C4BD8E009792DC /* Netflix_Clone.xcdatamodeld */,
+				1643621828C4BD8E009792DC /* NetflixCloneModel.xcdatamodeld */,
 			);
 			path = "Netflix Clone";
+			sourceTree = "<group>";
+		};
+		1643623128C4C53E009792DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1643623328C4C564009792DC /* General */,
+				1643623228C4C552009792DC /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1643623228C4C552009792DC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1643623728C4C65B009792DC /* DownloadsViewController.swift */,
+				1643623528C4C65B009792DC /* HomeViewController.swift */,
+				1643623628C4C65B009792DC /* SearchViewController.swift */,
+				1643623428C4C65B009792DC /* UpcomingViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1643623328C4C564009792DC /* General */ = {
+			isa = PBXGroup;
+			children = (
+				1643623C28C4C665009792DC /* AuthViewController.swift */,
+				1643624028C4C665009792DC /* ProfileViewController.swift */,
+				1643623E28C4C665009792DC /* SearchResultsViewController.swift */,
+				1643623F28C4C665009792DC /* TitlePreviewViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		1643629428C4C6D9009792DC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1643629528C4C6D9009792DC /* ApiCaller.swift */,
+				1643629628C4C6D9009792DC /* DataPersistenceManager.swift */,
+				1643629728C4C6D9009792DC /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1643629828C4C6D9009792DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1643629A28C4C6D9009792DC /* Tv.swift */,
+				1643629B28C4C6D9009792DC /* Title.swift */,
+				1643629C28C4C6D9009792DC /* YoutubeSearchResponse.swift */,
+				1643629D28C4C6D9009792DC /* Upcoming.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		164362A628C4C6EE009792DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				164362A728C4C6EE009792DC /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		164362A928C4C707009792DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				164362AA28C4C707009792DC /* TitleCollectionViewCell.swift */,
+				164362AB28C4C707009792DC /* CollectionViewTableViewCell.swift */,
+				164362AC28C4C707009792DC /* HeroHeaderUIView.swift */,
+				164362AD28C4C707009792DC /* TitleTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		164362AE28C4C707009792DC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				164362AF28C4C707009792DC /* TitlePreviewViewModel.swift */,
+				164362B028C4C707009792DC /* TitleViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +229,13 @@
 			dependencies = (
 			);
 			name = "Netflix Clone";
+			packageProductDependencies = (
+				1643622728C4BDD0009792DC /* FirebaseAnalytics */,
+				1643622928C4BDD0009792DC /* FirebaseAnalyticsSwift */,
+				1643622B28C4BDD0009792DC /* FirebaseAuth */,
+				1643622D28C4BDD0009792DC /* FirebaseFirestore */,
+				164362B828C4C8A4009792DC /* SDWebImage */,
+			);
 			productName = "Netflix Clone";
 			productReference = 1643620C28C4BD8E009792DC /* Netflix Clone.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +264,10 @@
 				Base,
 			);
 			mainGroup = 1643620328C4BD8E009792DC;
+			packageReferences = (
+				1643622628C4BDD0009792DC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				164362B728C4C8A4009792DC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 1643620D28C4BD8E009792DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1643621F28C4BD8F009792DC /* LaunchScreen.storyboard in Resources */,
+				1643623028C4BEB0009792DC /* GoogleService-Info.plist in Resources */,
 				1643621C28C4BD8F009792DC /* Assets.xcassets in Resources */,
 				1643621728C4BD8E009792DC /* Main.storyboard in Resources */,
 			);
@@ -141,10 +296,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1643621A28C4BD8E009792DC /* Netflix_Clone.xcdatamodeld in Sources */,
-				1643621428C4BD8E009792DC /* ViewController.swift in Sources */,
+				164362B528C4C707009792DC /* TitlePreviewViewModel.swift in Sources */,
+				1643621A28C4BD8E009792DC /* NetflixCloneModel.xcdatamodeld in Sources */,
+				1643623A28C4C65B009792DC /* SearchViewController.swift in Sources */,
+				164362B428C4C707009792DC /* TitleTableViewCell.swift in Sources */,
+				164362B228C4C707009792DC /* CollectionViewTableViewCell.swift in Sources */,
+				164362A528C4C6D9009792DC /* Upcoming.swift in Sources */,
+				1643623B28C4C65B009792DC /* DownloadsViewController.swift in Sources */,
+				1643624328C4C665009792DC /* SearchResultsViewController.swift in Sources */,
+				164362A328C4C6D9009792DC /* Title.swift in Sources */,
+				1643621428C4BD8E009792DC /* MainTabBarViewController.swift in Sources */,
 				1643621028C4BD8E009792DC /* AppDelegate.swift in Sources */,
+				164362A828C4C6EE009792DC /* Extensions.swift in Sources */,
+				164362B328C4C707009792DC /* HeroHeaderUIView.swift in Sources */,
+				164362A428C4C6D9009792DC /* YoutubeSearchResponse.swift in Sources */,
+				1643623828C4C65B009792DC /* UpcomingViewController.swift in Sources */,
+				1643624428C4C665009792DC /* TitlePreviewViewController.swift in Sources */,
+				164362A028C4C6D9009792DC /* AuthManager.swift in Sources */,
+				1643629F28C4C6D9009792DC /* DataPersistenceManager.swift in Sources */,
+				164362A228C4C6D9009792DC /* Tv.swift in Sources */,
+				164362B128C4C707009792DC /* TitleCollectionViewCell.swift in Sources */,
+				1643629E28C4C6D9009792DC /* ApiCaller.swift in Sources */,
 				1643621228C4BD8E009792DC /* SceneDelegate.swift in Sources */,
+				1643624528C4C665009792DC /* ProfileViewController.swift in Sources */,
+				1643624128C4C665009792DC /* AuthViewController.swift in Sources */,
+				164362B628C4C707009792DC /* TitleViewModel.swift in Sources */,
+				1643623928C4C65B009792DC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,14 +540,61 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		1643622628C4BDD0009792DC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		164362B728C4C8A4009792DC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1643622728C4BDD0009792DC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1643622628C4BDD0009792DC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1643622928C4BDD0009792DC /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1643622628C4BDD0009792DC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		1643622B28C4BDD0009792DC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1643622628C4BDD0009792DC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1643622D28C4BDD0009792DC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1643622628C4BDD0009792DC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		164362B828C4C8A4009792DC /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 164362B728C4C8A4009792DC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		1643621828C4BD8E009792DC /* Netflix_Clone.xcdatamodeld */ = {
+		1643621828C4BD8E009792DC /* NetflixCloneModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				1643621928C4BD8E009792DC /* Netflix_Clone.xcdatamodel */,
 			);
 			currentVersion = 1643621928C4BD8E009792DC /* Netflix_Clone.xcdatamodel */;
-			path = Netflix_Clone.xcdatamodeld;
+			path = NetflixCloneModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
